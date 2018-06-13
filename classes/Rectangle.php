@@ -1,20 +1,11 @@
 <?php
 
-class Rectangle {
-
-	public $x;
-	public $y;
+class Rectangle extends Shape {
 
 	public $width;
 	public $height;
 
-	public $color;
-
 	public function __construct($width, $height) {
-		$this->x = 0;
-		$this->y = 0;
-		$this->color = 'black';
-
 		$this->width = $width;
 		$this->height = $height;
 	}
@@ -27,15 +18,6 @@ class Rectangle {
 TXT;
 
 		return $svg;
-	}
-
-	function setPosition($x, $y) {
-		$this->x = $x;
-		$this->y = $y;
-	}
-
-	function setColor($color) {
-		$this->color = $color;
 	}
 
 }
